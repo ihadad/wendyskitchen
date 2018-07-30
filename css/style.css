@@ -1,0 +1,87 @@
+* {
+    text-align:center;
+}
+header {
+    height: 50px;
+    background-color: cornflowerblue;
+    color: rgb(255,0,0);
+    position:sticky;
+    top:0;
+}
+.layout{
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Raleway', sans-serif;
+    position: sticky;
+}
+
+nav ul {
+    width: 22vw;
+    
+}
+
+nav li {
+    background-image: url("../images/Notecard.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 13.2vw;
+    line-height: 13.2vw;
+}
+
+.current {
+    width: 33.3vw;
+    height: 19.98vw;
+    line-height: 19.98vw;
+}
+
+.homecards {
+width: 100%;
+display: inline-flex;
+flex-wrap: wrap;
+}
+.card {
+    min-width:33.3vw;
+    background-image: url("../images/Notecard.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 19.98vw;
+    line-height: 19.98vw;
+    
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 175%;
+    font-weight: bold;
+    font-family: 'Paytone One', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position:absolute;
+    left: 33vw; 
+}
+main section {
+    width: 32.4vw;
+    height: 33vw;
+    background-color: pink;
+    line-height: 33vw;
+    
+}
+footer {
+    position: static;
+    bottom:0;
+    height: 100px;
+    background-color: aqua;
+    
+}
