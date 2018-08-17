@@ -8,21 +8,126 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header>Header</header>
         <nav>
-            <ul>
-                <li><a href="soups.html">Soups</a></li>
-                <li><a href="salads.html">Sides and Salads</a></li>
-                <li><a href="meat.html">Meat, Poultry and Fish</a></li>
-                <li><a href="veg.html">Vegetarian</a></li>
-                <li><a href="bread.html">Breads</a></li>
-                <li class="current"><a href="dessert.html">Desserts</a></li>
-            </ul>
-        </nav>
+                <ul>
+                    <li class="home-logo">
+                    <a class="hover-hide" href="index.html"><img src="images/logo-black-solid.svg" alt="Home"></a>
+                    <a class="hover-show" href="index.html"><img src="images/logo-pink-solid.svg" alt="Home"></a>
+                    </li> 
+                    <li><a href="soups.html">Soups</a></li>
+                    <li><a href="salads.html">Sides and Salads</a></li>
+                    <li><a href="meat.html">Meat, Poultry and Fish</a></li>
+                    <li><a href="veg.html">Vegetarian</a></li>
+                    <li><a href="bread.html">Breads</a></li>
+                    <li class="current"><a href="dessert.html">Desserts</a></li>
+                </ul>
+            </nav>
         <main>
-
+            <summary><a class="thumb" href="#zucchini-muffins">Zucchini Carrot Muffins</a></summary>
+            <summary style="background-image:url('images/dessert-carob.JPG'); background-size:cover; background-position: center;"><a class="thumb" href="#carob">Carob Chip Cookies</a></summary>
+            <summary><a class="thumb" href="#biscotti">Biscotti</a></summary>
+            <summary><a class="thumb" href="#rachels-cookies">Rachel's Cookies</a></summary>
         </main>
         
-        <footer>Footer</footer>
+        <detail id="zucchini-muffins" class="pop-up"> 
+            <a href="dessert.html" class="empty-space"></a>
+            <!--<img src="#">-->
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">2 cups of shredded carrots</p>
+                <p class="ingredient">2 cups of shredded zucchinis</p>
+                <p class="ingredient">3 cups of whole wheat flower</p>
+                <p class="ingredient">1½ cups of brown sugar</p>
+                <p class="ingredient">1 tsp. of cinnamon</p>
+                <p class="ingredient">½ tsp. of salt</p>
+                <p class="ingredient">¾ tsp. of baking soda</p>
+                <p class="ingredient">1 tsp. of baking powder</p>
+                <p class="ingredient">1 cup of oil</p>
+                <p class="ingredient">3 eggs</p>
+                <p class="ingredient">½ cup of orange juice</p>
+                <p class="ingredient">½ cup of chocolate chips</p>
+                <p class="ingredient">1 cup of vanilla protien powder (optional)</p>
+                <p class="ingredient">12 tsp. of freshly crushed flaxseed</p>
+            </div>
+            <ol class="steps">
+                <li>Preheat oven to 350°F</li>
+                <li>Combine ingredients in a bowl</li>
+                <li>Pour mixture into greased muffin tray</li>
+                <li>Bake for 30-35 minutes</li>
+                <li>Yields 24 muffins (5 gr. of protien per muffin)</li>
+            </ol>
+        </detail>
+        <detail id="carob" class="pop-up"> 
+            <a href="dessert.html" class="empty-space"></a>
+            <img src="images/dessert-carob.JPG">
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">1 cup of brown sugar</p>
+                <p class="ingredient">2 eggs</p>
+                <p class="ingredient">2 tsp. of vanilla extract</p>
+                <p class="ingredient">1⅓ cups of margarine</p>
+                <p class="ingredient">1½ cups of cooked red lentils</p>
+                <p class="ingredient">3 cups of whole wheat flour</p>
+                <p class="ingredient">1 tsp. of baking soda</p>
+                <p class="ingredient">¼ tsp. of salt</p>
+                <p class="ingredient">1 cup of oatmeal</p>
+                <p class="ingredient">¼ cup of orange juice</p>
+                <p class="ingredient">2 cups of carob chips</p>
+            </div>
+            <ol class="steps">
+                <li>Preheat oven to 375°F</li>
+                <li>Combine brown sugar, eggs, vanilla extract and margarine in a bowl</li>
+                <li>Add remaining ingredients and mix well</li>
+                <li>Form cookies and place on an ungreased baking tray</li>
+                <li>Bake for 12-14 minutes</li>
+            </ol>
+        </detail>
+        <detail id="biscotti" class="pop-up"> 
+            <a href="dessert.html" class="empty-space"></a>
+            <!--<img src="#">-->
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">4 eggs</p>
+                <p class="ingredient">½ pound of butter</p>
+                <p class="ingredient">Vanilla or almond extract</p>
+                <p class="ingredient">2 cups of sugar</p>
+                <p class="ingredient">6½ cups of flour</p>
+                <p class="ingredient">2 tsp. of baking powder</p>
+                <p class="ingredient">1 tsp. of salt</p>
+                <p class="ingredient">Nuts, chocolate or raisins</p>
+            </div>
+            <ol class="steps">
+                <li>Preheat oven to 350°F</li>
+                <li>Combine ingredients in a bowl</li>
+                <li>Form into flattened log on a baking tray</li>
+                <li>Bake for 30 minutes</li>
+                <li>After cooling, cut into even slices</li>
+                <li>Return to oven and bake for another 15 minutes</li>
+            </ol>
+        </detail>
+        <detail id="rachels-cookies" class="pop-up"> 
+            <a href="dessert.html" class="empty-space"></a>
+            <!--<img src="#">-->
+            <div class="ing-list">
+                <p class="list-title">Recipe by Rachel Hadad</p>
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">3 eggs</p>
+                <p class="ingredient">1 cup of brown sugar</p>
+                <p class="ingredient">¾ cups of oil</p>
+                <p class="ingredient">⅓ cup of shaved coconut</p>
+                <p class="ingredient">⅓ cup of sesame seeds</p>
+                <p class="ingredient">1 tbsp. of water</p>
+                <p class="ingredient">1 tbsp. of Arak</p>
+                <p class="ingredient">2 tbsp. of baking powder</p>
+                <p class="ingredient">Flour</p>
+            </div>
+            <ol class="steps">
+                <li>Preheat oven to 325°F</li>
+                <li>Combine ingredients in a bowl, adding flour 1 cup at a time until desired consistency is reached</li>
+                <li>To shape cookies, roll into thin, finger-length logs</li>
+                <li>Logs can be joined at the ends for circular cookies, if desired</li>
+                <li>Place on baking tray and bake for 10-15 minutes</li>
+            </ol>
+        </detail>
     </body>
 </html>

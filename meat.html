@@ -8,21 +8,167 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header>Header</header>
         <nav>
-            <ul>
-                <li><a href="soups.html">Soups</a></li>
-                <li><a href="salads.html">Sides and Salads</a></li>
-                <li class="current"><a href="meat.html">Meat, Poultry and Fish</a></li>
-                <li><a href="veg.html">Vegetarian</a></li>
-                <li><a href="bread.html">Breads</a></li>
-                <li><a href="dessert.html">Desserts</a></li>
-            </ul>
-        </nav>
+                <ul>
+                    <li class="home-logo">
+                    <a class="hover-hide" href="index.html"><img src="images/logo-black-solid.svg" alt="Home"></a>
+                    <a class="hover-show" href="index.html"><img src="images/logo-pink-solid.svg" alt="Home"></a>
+                    </li> 
+                    <li><a href="soups.html">Soups</a></li>
+                    <li><a href="salads.html">Sides and Salads</a></li>
+                    <li class="current"><a href="meat.html">Meat, Poultry and Fish</a></li>
+                    <li><a href="veg.html">Vegetarian</a></li>
+                    <li><a href="bread.html">Breads</a></li>
+                    <li><a href="dessert.html">Desserts</a></li>
+                </ul>
+            </nav>
         <main>
-
+            <summary style="background-image:url('images/meat-chickpea-chicken.jpg'); background-size:cover; background-position: center;"><a class="thumb" href="#chickpea-chicken">Chickpea Chicken</a></summary>
+            <summary><a class="thumb" href="#zevs-chicken">Zev's Chicken</a></summary>
+            <summary style="background-image:url('images/meat-spicy-tomato-chicken.jpg'); background-size:cover; background-position: center;"><a class="thumb" href="#tomato-chicken">Spicy Tomato Chicken & Rice</a></summary>
+            <summary style="background-image:url('images/meat-kfita.jpg'); background-size:cover; background-position: center;"><a class="thumb" href="#kfita">Tunisian Kfita</a></summary>
+            <summary><a class="thumb" href="#brisket">Brisket</a></summary>
+            <summary style="background-image:url('images/meat-schnitzel.JPG'); background-size:cover; background-position: center;"><a class="thumb" href="#schnitzel">Baked Schnitzel</a></summary>
         </main>
         
-        <footer>Footer</footer>
+        <detail id="chickpea-chicken" class="pop-up"> 
+            <a href="meat.html" class="empty-space"></a>
+            <img src="images/meat-chickpea-chicken.jpg">
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">16 pieces of boneless skinless chicken thighs</p>
+                <p class="ingredient">¼ to ½ cup of flour</p>
+                <p class="ingredient">⅛ cup of oil</p>
+                <p class="ingredient">1 cup of chicken stock</p>
+                <p class="ingredient">1 can of chickpeas, rinsed and drained</p>
+                <p class="ingredient">2 tsp. of hot paprika</p>
+                <p class="ingredient">2 tsp. of cumin</p>
+                <p class="ingredient">½ tsp. of turmeric</p>
+                <p class="ingredient">¾ tsp. of black pepper</p>
+            </div>
+            <ol class="steps">
+                <li>Heat oil in a large pan</li>
+                <li>Coat each thigh in flour on both sides</li>
+                <li>On medium heat, brown half of the chicken on each side for 3 minutes</li>
+                <li>While browning, sprinkle both sides of chicken with spice mixture</li>
+                <li>Repeat with second batch of chicken</li>
+                <li>Combine all the browned chicken with chickpeas in a large pan</li>
+                <li>Turn heat to low and add chicken stock</li>
+                <li>Cover and simmer for 25-30 minutes until cooked through</li>
+            </ol>
+        </detail>
+        <detail id="zevs-chicken" class="pop-up"> 
+            <a href="meat.html" class="empty-space"></a>
+            <!--<img src="#">-->
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">2 chickens, cut with bone in</p>
+                <p class="ingredient">3 cloves of garlic, crushed</p>
+                <p class="ingredient">1 cup of oil</p>
+                <p class="ingredient">1 tsp. of salt</p>
+                <p class="ingredient">½ tsp. of pepper</p>
+                <p class="ingredient">1 tsp. of oregano</p>
+                <p class="ingredient">1 heaping tbsp. of hot paprika</p>
+                <p class="ingredient">1 cup of flour</p>
+            </div>
+            <ol class="steps">
+                <li>Combine garlic, oil, salt, pepper, oregano and paprika in a bowl</li>
+                <li>Pour half of the marinade over chicken and refrigerate for a few hours or overnight. Save the other half for later</li>
+                <li>Lightly dip both sides of the chicken in flour and place on an ungreased baking tray</li>
+                <li>Drizzle the remaining marinade on top of the chicken</li>
+                <li>Bake at 350°F for 1 hour</li>
+            </ol>
+        </detail>
+        <detail id="tomato-chicken" class="pop-up"> 
+            <a href="meat.html" class="empty-space"></a>
+            <img src="images/meat-spicy-tomato-chicken.jpg">
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">16 pieces of boneless skinless chicken thighs</p>
+                <p class="ingredient">½ cup of flour</p>
+                <p class="ingredient">¼ cup of oil</p>
+                <p class="ingredient">2 tsp. of hot paprika</p>
+                <p class="ingredient">2 tsp. of sweet paprika</p>
+                <p class="ingredient">2 tsp. of garlic powder</p>
+                <p class="ingredient">2 tsp. of onion powder</p>
+                <p class="ingredient">1 tsp. of salt</p>
+                <p class="ingredient">1 tsp. of pepper</p>
+                <p class="ingredient">1 large can of diced tomatoes</p>
+                <p class="ingredient">2 cups of rice</p>
+                <p class="ingredient">1 tbsp. of powdered chicken soup mix</p>
+                <p class="ingredient">4 cups of water</p>
+            </div>
+            <ol class="steps">
+                <li>Place flour in a freezer bag or bowl</li>
+                <li>Dip each piece of chicken in flour</li>
+                <li>Heat oil in a large pan on medium heat</li>
+                <li>Add chicken</li>
+                <li>Sprinkle half of the how and sweet paprika, garlic powder, onion powder, salt and pepper on the chicken</li>
+                <li>Brown for 2-3 minues and turn over</li>
+                <li>Sprinkle the remaining spices on this side of the chicken</li>
+                <li>After 2 minutes, pour the can of diced tomatoes over the chicken</li>
+                <li>Add the rice and water</li>
+                <li>Add the chicken soup mix and stir</li>
+                <li>Cook on low for 40 minutes</li>
+            </ol>
+        </detail>
+        <detail id="kfita" class="pop-up"> 
+            <a href="meat.html" class="empty-space"></a>
+            <img src="images/meat-kfita.jpg">
+            <div class="ing-list">
+                <p class="list-title">Recipe by Pnina Hadad</p>
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">1 large bunch of parsley, finely chopped</p>
+                <p class="ingredient">1 large bunch of coriander, finely chopped</p>
+                <p class="ingredient">1 large bunch of dill, finely chopped</p>
+                <p class="ingredient">3 onions, finely chopped</p>
+                <p class="ingredient">3-4 medium-sized potatoes</p>
+                <p class="ingredient">1 egg</p>
+                <p class="ingredient">1 heaping tbsp. of salt</p>
+                <p class="ingredient">1 tbsp. of pepper</p>
+                <p class="ingredient">1 heaping tbsp. of turmeric</p>
+                <p class="ingredient">3 heaping tbsp. of hot paprika</p>
+                <p class="ingredient">½ kilogram of semolina</p>
+                <p class="ingredient">3 boneless chicken breasts, cut finely (optional)</p>
+            </div>
+            <ol class="steps">
+                <li>Boil and peel potatoes</li>
+                <li>Combine all ingredients in the order above and mix</li>
+                <li>Form patties and fry both sides in hot oil until brown</li>
+            </ol>
+        </detail>
+        <detail id="brisket" class="pop-up"> 
+            <a href="meat.html" class="empty-space"></a>
+            <!--<img src="#">-->
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">Brisket</p>
+                <p class="ingredient">Dry mustard</p>
+                <p class="ingredient">½ cup of red wine</p>
+                <p class="ingredient">½ cup of orange juice</p>
+                <p class="ingredient">2 tbsp. of ketchup</p>
+                <p class="ingredient">Pepper</p>
+                <p class="ingredient">Garlic powder</p>
+                <p class="ingredient">Sweet paprika</p>
+                <p class="ingredient">Powdered onion soup mix</p>
+                <p class="ingredient">Potatoes</p>
+            </div>
+            <ol class="steps">
+                <li>Brown brisket in oven at 400°F</li>
+                <li>Sprinkle with dry mustard, pepper, garlic powder and paprika</li>
+                <li>Combine wine, orange juice and ketchup and pour the mixture over the brisket</li>
+                <li>Sprinkle with 1½ packages of onion soup mix</li>
+                <li>Cover and cook at 350°F for 3 hours</li>
+                <li>Baste once</li>
+                <li>Add potatoes later</li>
+            </ol>
+        </detail>
+        <detail id="schnitzel" class="pop-up"> 
+            <a href="meat.html" class="empty-space"></a>
+            <img src="images/meat-schnitzel.JPG">
+            <div class="ing-list">
+                <p class="list-title">Recipe coming soon!</p>
+            </div>
+        </detail>
     </body>
 </html>

@@ -3,12 +3,13 @@ body {
     text-align:center;
     line-height: 1.5em; 
 }
+
 header {
     width:100vw;
     height:80px;
     position:fixed;
     top:0;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.75);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -21,12 +22,19 @@ header a {
     margin-top:2rem;
 }
 
-.logo-solid{
+.hover-hide{
     z-index: 999;
 }
-.logo-lines{
+.hover-show{
     z-index:998;
 }
+
+.hover-hide:hover{
+    display:none;
+}
+/*.hover-hide:active{
+    display:none;
+}*/
 
 main.home{
     display: flex;
@@ -34,8 +42,7 @@ main.home{
     flex-wrap:wrap;
     width:800px;
     margin:auto;
-    margin-top: 5rem;
-    margin-bottom:6rem;
+    margin-top: 7rem;
     justify-content: space-around;
     align-items: stretch;
     height:80vh;
@@ -43,9 +50,9 @@ main.home{
 
 section{
     flex-basis:30%;
-    /*to make perfect square or circle*/height:0;
+    height:0; /*to make perfect square or circle*/
     padding:15% 0;
-    background-color:palegreen;
+    background-color:#FF4A81;
     border-radius: 50%;
     display:flex;
     justify-content: center;
@@ -58,7 +65,7 @@ a{
     font-weight: bolder;
     margin:.5rem;
     text-decoration: none;
-    height: 30%;
+    height: 0;
     width:100%;
     border-radius:inherit;
     display:inherit;
@@ -66,18 +73,47 @@ a{
     align-items: inherit;
 }
 
+section a{
+    padding: 50% 0;
+}
+
 a:hover{
-    color:grey;
+    color:#F37EFF;
     font-size:2rem;
     line-height:2rem;
 }
 
 footer {
-    position: fixed;
-    width:100vw;
+    width:90vw;
     bottom:0;
-    height: 5rem;
-    background-color: aqua;
+    padding:1rem;
+    background-color:#F37EFF;
+    color:white;
+    border: 5px dotted white;
+    margin:5vw;
+    margin-bottom:1rem;
+}
+
+footer p {
+    font-size:.9rem;
+    line-height:.9rem;
+    text-align:left;
+    max-width:1000px;
+    margin:auto;
+    margin-top:.5rem;
+}
+
+::-webkit-scrollbar {
+    display:none;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 
 nav {
@@ -114,7 +150,7 @@ nav li {
     height: 12vh;
     width:12vh;
     border-radius:50%;
-    background-color:palegreen;
+    background-color:#FF4A81;
     line-height:1rem;
     display:flex;
     justify-content: center;
@@ -135,6 +171,7 @@ nav a{
 nav a:hover{
     font-size:1rem;
     line-height:1rem;
+    color:#F37EFF;
 }
 
 .current {
@@ -172,18 +209,119 @@ summary{
     flex-basis:30%;
     height:0;
     padding:15% 0;
-    background-color:palegreen;
+    background-color:#FF5D3D;
     border-radius: 10%;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
+summary img {
+    width:100%;
+    position:absolute;
+    z-index: -1;
+}
+
+summary a {
+    color:white;
+}
+
+summary a:hover {
+    color:white;
+}
+
+/* for recipe pop-ups!!
+
+based on lightbox code by Gregory Schier
+https://codepen.io/gschier/pen/HCoqh */
+
+.pop-up {
+	/** Default lightbox to hidden */
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 80vw;
+	height: 80vh;
+	text-align: center;
+	top: 10vh;
+	left: 10vw;
+	background-color: white;
+	border: 5px solid #FF5D3D ;
+	border-radius:10vw;
+	overflow: scroll;
+}
+
+
+
+.empty-space {
+    position:fixed;
+    left:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+    z-index: -1;
+}
+
+/* to exit pop-up */
+.pop-up:target {
+	display: block;
+}
+
+detail img{
+    float:left;
+    margin:10%;
+    width:40%;
+}
+
+.ing-list{
+    float:right;
+    margin-top:10%;
+    margin-right:10%;
+    width:30%;
+}
+
+.list-title{
+    text-align:left;
+    font-weight:bold;
+    font-style: oblique;
+}
+
+.ingredient{
+    text-align:left;
+    font-size:.9rem;
+    line-height:.9rem;
+    font-style: oblique;
+    text-indent: -1rem;
+    margin-left:1rem;
+}
+
+ol{
+    display:inline-block;
+    text-align:left;
+    list-style: disc;
+    margin:2rem;
+    margin-top:0;
+}
+
+.pop-up::-webkit-scrollbar  {
+    display:none; 
+}
+
+
+
+
+
+
+
 /*various screen widths*/
 
 @media screen and (max-width: 1360px){
+    main.home{
+        height:auto;
+    }
+    
     main{
-    width:800px;
+        width:800px;
     }
 
     summary{

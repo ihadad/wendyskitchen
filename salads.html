@@ -8,21 +8,168 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header>Header</header>
-        <nav>
-            <ul>
-                <li><a href="soups.html">Soups</a></li>
-                <li class="current"><a href="salads.html">Sides and Salads</a></li>
-                <li><a href="meat.html">Meat, Poultry and Fish</a></li>
-                <li><a href="veg.html">Vegetarian</a></li>
-                <li><a href="bread.html">Breads</a></li>
-                <li><a href="dessert.html">Desserts</a></li>
-            </ul>
-        </nav>
+         <nav>
+                <ul>
+                    <li class="home-logo">
+                    <a class="hover-hide" href="index.html"><img src="images/logo-black-solid.svg" alt="Home"></a>
+                    <a class="hover-show" href="index.html"><img src="images/logo-pink-solid.svg" alt="Home"></a>
+                    </li> 
+                    <li><a href="soups.html">Soups</a></li>
+                    <li class="current"><a href="salads.html">Sides and Salads</a></li>
+                    <li><a href="meat.html">Meat, Poultry and Fish</a></li>
+                    <li><a href="veg.html">Vegetarian</a></li>
+                    <li><a href="bread.html">Breads</a></li>
+                    <li><a href="dessert.html">Desserts</a></li>
+                </ul>
+            </nav>
         <main>
-
+            <summary style="background-image:url('images/salad-eggplant.JPG'); background-size:cover; background-position: center;"><a class="thumb" href="#bean-barley"><a class="thumb" href="#eggplant">Eggplant Salad</a></summary>
+            <summary style="background-image:url('images/salad-quinoa.JPG'); background-size:cover; background-position: center;"><a class="thumb" href="#quinoa">Quinoa Salad</a></summary>
+            <summary style="background-image:url('images/salad-olives.jpg'); background-size:cover; background-position: center;"><a class="thumb" href="#olives">Olives</a></summary>
+            <summary style="background-image:url('images/salad-carrots.JPG'); background-size:cover; background-position: center;"><a class="thumb" href="#carrots">Spicy Carrot Salad</a></summary>
+            <summary><a class="thumb" href="#broccoli-kugel">Broccoli and Cauliflower Kugel</a></summary>
+            <summary><a class="thumb" href="#zucchini-kugel">Zucchini Kugel</a></summary>
         </main>
         
-        <footer>Footer</footer>
+        <detail id="eggplant" class="pop-up"> 
+            <a href="salads.html" class="empty-space"></a>
+            <img src="images/salad-eggplant.JPG">
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">3 or 4 eggplants</p>
+                <p class="ingredient">¼ cup of oil</p>
+                <p class="ingredient">3 tbsp. of Vinegar</p>
+                <p class="ingredient">2 cloves of garlic</p>
+                <p class="ingredient">¾ tsp. of salt</p>
+                <p class="ingredient">1 heaping tbsp. of hot paprika</p>
+                <p class="ingredient">2 tbsp. of fresh chopped parsley</p>
+            </div>
+            <ol class="steps">
+                <li>Preheat oven to 350°F</li>
+                <li>Slice eggplants ½" thick, leaving skin on</li>
+                <li>Brush both sides with olive oil and place on baking tray</li>
+                <li>Bake for 30 minutes on each side</li>
+                <li>Let cool</li>
+                <li>To make dressing, crush garlic with oil, vinegar, paprika and salt</li>
+                <li>Pour over eggplant and garnish with parsley</li>
+            </ol>
+        </detail>
+        <detail id="quinoa" class="pop-up"> 
+            <a href="salads.html" class="empty-space"></a>
+            <img src="images/salad-quinoa.JPG">
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">2 cups of quinoa</p>
+                <p class="ingredient">3 cups of water</p>
+                <p class="ingredient">2 green onions, chopped</p>
+                <p class="ingredient">1 red pepper, chopped</p>
+                <p class="ingredient">1 stalk of celery, chopped</p>
+                <p class="ingredient">1 can of chickpeas (optional)</p>
+                <p class="ingredient">⅔ cup of oil</p>
+                <p class="ingredient">¼ cup of white wine vinegar</p>
+                <p class="ingredient">1 mandarin orange</p>
+                <p class="ingredient">1½ tbsp. of honey</p>
+                <p class="ingredient">10-12 mint leaves</p>
+                <p class="ingredient">Salt and pepper</p>
+            </div>
+            <ol class="steps">
+                <li>Boil quinoa in water on low heat until all water is absorbed</li>
+                <li>To make dressing, blend oil, white wine vinegar, mandarin orange, honey, mint, salt and pepper</li>
+                <li>Toss into quinoa with chopped vegetables</li>
+            </ol>
+        </detail>
+        <detail id="olives" class="pop-up"> 
+            <a href="salads.html" class="empty-space"></a>
+            <img src="images/salad-olives.jpg">
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">Stuffed green olives</p>
+                <p class="ingredient">1 onion, chopped finely</p>
+                <p class="ingredient">Tomato paste</p>
+                <p class="ingredient">Hot paprika</p>
+                <p class="ingredient">Chicken stock or soup mix</p>
+                <p class="ingredient">Tabasco sauce (opional)</p>
+                <p class="ingredient">Salt and pepper</p>
+            </div>
+            <ol class="steps">
+                <li>Soak olives one day ahead</li>
+                <li>Sauté onion</li>
+                <li>Add olives and 1 cup of water</li>
+                <li>Add salt, pepper, 2 tbsp. of hot paprika and 1 tsp. of chicken soup mix</li>
+                <li>For more heat, add tabasco sauce as desired</li>
+                <li>Add tomato paste and simmer for 1 hour</li>
+                <li>As water absorbs, continue adding water 1 cup at a time, up to 3 cups</li>
+            </ol>
+        </detail>
+        <detail id="carrots" class="pop-up"> 
+            <a href="salads.html" class="empty-space"></a>
+            <img src="salad-carrots.JPG">
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">Carrots</p>
+                <p class="ingredient">1½ tbsp. of hot paprika</p>
+                <p class="ingredient">1 heaping tsp. of cumin</p>
+                <p class="ingredient">1 tsp. of salt</p>
+                <p class="ingredient">1 heaping tsp. of crushed garlic</p>
+                <p class="ingredient">2 tbsp. of lemon juice</p>
+                <p class="ingredient">Olive oil</p>
+                <p class="ingredient">2 tbsp. of fresh parsley, chopped</p>
+            </div>
+            <ol class="steps">
+                <li>Boil carrots until soft</li>
+                <li>Cool and slice</li>
+                <li>Combine remaining ingredients in a bowl, using enough oil to create a paste-like consistency</li>
+                <li>Toss carrots in dressing and add parsley to garnish</li>
+                <li>Serve at room temperature</li>
+            </ol>
+        </detail>
+        <detail id="broccoli-kugel" class="pop-up"> 
+            <a href="salads.html" class="empty-space"></a>
+            <!--<img src="#">-->
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">2 broccolis</p>
+                <p class="ingredient">1 cauliflower</p>
+                <p class="ingredient">¼ cup of mayonnaise</p>
+                <p class="ingredient">1 tsp. of margarine or butter</p>
+                <p class="ingredient">½ cup of soy milk or dairy milk</p>
+                <p class="ingredient">3 eggs</p>
+                <p class="ingredient">2 tbsp. of flour</p>
+                <p class="ingredient">2 tbsp. of chicken or vegetable powdered soup mix</p>
+                <p class="ingredient">Salt and pepper</p>
+            </div>
+            <ol class="steps">
+                <li>Preheat oven to 350°F</li>
+                <li>Boil broccoli and cauliflower until very soft</li>
+                <li>Strain out water amd combine with remaining ingredients in a bowl</li>
+                <li>Mash until puréed</li>
+                <li>Spray muffin tray with non-stick cooking spray</li>
+                <li>Fill tray with mixture and back for 45-60 minutes</li>
+                <li>Yields 18 muffins</li>
+            </ol>
+        </detail>
+        <detail id="zucchini-kugel" class="pop-up"> 
+            <a href="salads.html" class="empty-space"></a>
+            <!--<img src="#">-->
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">5 medium zucchinis, grated</p>
+                <p class="ingredient">1 large onion, finely chopped</p>
+                <p class="ingredient">2-3 green onions, finely chopped</p>
+                <p class="ingredient">1½ cups of flour</p>
+                <p class="ingredient">⅔ tsp. of baking powder</p>
+                <p class="ingredient">¼ cup of water</p>
+                <p class="ingredient">½ cup of oil</p>
+                <p class="ingredient">3 eggs</p>
+                <p class="ingredient">2 tsp. of chicken or vegetable powdered soup mix</p>
+                <p class="ingredient">Salt and pepper</p>
+            </div>
+            <ol class="steps">
+                <li>Preheat oven to 375°F</li>
+                <li>Mix all ingredients together</li>
+                <li>Grease baking dish and fill with mixture</li>
+                <li>Bake for 1 hour or until golden-brown</li>
+            </ol>
+        </detail>
     </body>
 </html>

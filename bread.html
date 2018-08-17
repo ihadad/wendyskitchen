@@ -8,21 +8,45 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header>Header</header>
-        <nav>
-            <ul>
-                <li><a href="soups.html">Soups</a></li>
-                <li><a href="salads.html">Sides and Salads</a></li>
-                <li><a href="meat.html">Meat, Poultry and Fish</a></li>
-                <li><a href="veg.html">Vegetarian</a></li>
-                <li class="current"><a href="bread.html">Breads</a></li>
-                <li><a href="dessert.html">Desserts</a></li>
-            </ul>
-        </nav>
+         <nav>
+                <ul>
+                    <li class="home-logo">
+                    <a class="hover-hide" href="index.html"><img src="images/logo-black-solid.svg" alt="Home"></a>
+                    <a class="hover-show" href="index.html"><img src="images/logo-pink-solid.svg" alt="Home"></a>
+                    </li> 
+                    <li><a href="soups.html">Soups</a></li>
+                    <li><a href="salads.html">Sides and Salads</a></li>
+                    <li><a href="meat.html">Meat, Poultry and Fish</a></li>
+                    <li><a href="veg.html">Vegetarian</a></li>
+                    <li class="current"><a href="bread.html">Breads</a></li>
+                    <li><a href="dessert.html">Desserts</a></li>
+                </ul>
+            </nav>
         <main>
-
+            <summary><a class="thumb" href="#challah">Challah</a></summary>
         </main>
         
-        <footer>Footer</footer>
+        <detail id="challah" class="pop-up"> 
+            <a href="bread.html" class="empty-space"></a>
+            <!--<img src="#">-->
+            <div class="ing-list">
+                <p class="list-title">Ingredients</p>
+                <p class="ingredient">2¼ tsp. of yeast</p>
+                <p class="ingredient">4 cups of whole wheat flour</p>
+                <p class="ingredient">1 tsp. of salt</p>
+                <p class="ingredient">1 cup of warm water</p>
+                <p class="ingredient">½ cup of honey or agave nectar</p>
+                <p class="ingredient">¼ cup of oil</p>
+                <p class="ingredient">1 egg</p>
+            </div>
+            <ol class="steps">
+                <li>Preheat oven to 350°F</li>
+                <li>Combine ingredients in a bowl</li>
+                <li>Let rise</li>
+                <li>Roll dough into small buns</li>
+                <li>On a baking tray, form buns into a "pull-apart" loaf</li>
+                <li>Bake for 25 minutes</li>
+            </ol>
+        </detail>
     </body>
 </html>
